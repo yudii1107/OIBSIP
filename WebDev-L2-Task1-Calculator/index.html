@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17130F">
+    <meta name="description" content="YudiCalc is a modern, responsive calculator with a warm yellow and brown design.">
+    <title>YudiCalc | Smart Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <a href="#" class="brand" aria-label="YudiCalc home">
+                <span class="brand-icon">Y</span>
+                <span class="brand-name">YudiCalc</span>
+            </a>
+            <span class="header-label">SMART CALCULATOR</span>
+        </header>
+
+        <section class="calculator" aria-label="Calculator">
+            <div class="calculator-top">
+                <div>
+                    <p class="eyebrow">YOUR DAILY CALCULATOR</p>
+                    <h1>Calculate smarter.</h1>
+                </div>
+                <span class="calculator-symbol" aria-hidden="true">÷</span>
+            </div>
+
+            <div class="display" aria-label="Calculator display">
+                <div class="expression" id="expression" aria-live="polite">Ready when you are</div>
+                <output class="result" id="result" aria-live="polite">0</output>
+            </div>
+
+            <div class="keypad" id="keypad" aria-label="Calculator keys">
+                <button class="key key-special" data-action="clear" type="button">AC</button>
+                <button class="key key-special" data-action="backspace" type="button" aria-label="Backspace">DEL</button>
+                <button class="key key-special" data-action="percent" type="button">%</button>
+                <button class="key key-operator" data-operator="/" type="button" aria-label="Divide">÷</button>
+
+                <button class="key" data-number="7" type="button">7</button>
+                <button class="key" data-number="8" type="button">8</button>
+                <button class="key" data-number="9" type="button">9</button>
+                <button class="key key-operator" data-operator="*" type="button" aria-label="Multiply">×</button>
+
+                <button class="key" data-number="4" type="button">4</button>
+                <button class="key" data-number="5" type="button">5</button>
+                <button class="key" data-number="6" type="button">6</button>
+                <button class="key key-operator" data-operator="-" type="button" aria-label="Subtract">−</button>
+
+                <button class="key" data-number="1" type="button">1</button>
+                <button class="key" data-number="2" type="button">2</button>
+                <button class="key" data-number="3" type="button">3</button>
+                <button class="key key-operator" data-operator="+" type="button" aria-label="Add">+</button>
+
+                <button class="key key-special" data-action="sign" type="button">±</button>
+                <button class="key" data-number="0" type="button">0</button>
+                <button class="key" data-action="decimal" type="button">.</button>
+                <button class="key key-equals" data-action="equals" type="button" aria-label="Calculate result">=</button>
+            </div>
+
+            <footer class="calculator-footer">
+                <span>Designed for everyday calculations</span>
+                <span class="status-dot"></span>
+            </footer>
+        </section>
+
+        <footer class="page-footer">
+            <p>YudiCalc <span>·</span> Simple by design.</p>
+            <p>Made with precision.</p>
+        </footer>
+    </main>
+</body>
+</html>
